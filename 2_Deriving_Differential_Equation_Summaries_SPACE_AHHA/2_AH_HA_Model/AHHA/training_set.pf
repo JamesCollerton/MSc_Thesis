@@ -1,0 +1,130 @@
+runs: 1
+ColonySize
+{
+	set_list: 150 175 200 225 250
+	{
+		runs: 10
+		NumScouts
+		{
+			set_list: 40
+			{
+				runs: 1
+				NormalQuorumThreshold
+				{
+					set_list: 1 5 8 10 12
+					{
+						runs: 1
+						HostileQuorumThreshold
+						{
+							set_list: 1 5 8 10 12
+							{
+								runs: 1
+								PreferenceSwitchProb
+								{
+									set_list: 0.05
+									{
+										runs: 1
+										NestQualityStdDev
+										{
+											set_list: 2
+											{
+												runs: 1
+												AssessmentDelay
+												{
+													set_list: 5
+													{
+														runs: 1
+														EmergencyQuorumThreshold
+														{
+															set_list: 1 5 8 10 12
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+StartScoutingProb
+{
+	set: 0.26
+}
+ChangeNestProb
+{
+	set: 0
+}
+ReverseTandemRunProb
+{
+	set: 0.0
+}
+StopScoutingProb
+{
+	set: 0
+}
+MaxNestQuality
+{
+	set: 1000
+}
+TandemRunSpeed
+{
+	set: 5
+}
+CarryingSpeed
+{
+	set: 15
+}
+NestQualityRequirement
+{
+	set: 1
+}
+EnvironmentHostile
+{
+	set_boolean: false
+}
+DistanceSignificant
+{
+	set_boolean: true
+}
+CompareNestSiteQualities
+{
+	set_boolean: true
+}
+Nest1ToNest2Distance
+{
+	set: 150
+}
+Nest1ToNest3Distance
+{
+	set: 150
+}
+Nest2ToNest3Distance
+{
+	set: 150
+}
+Nest1Habitable
+{
+	set_boolean: false
+}
+Nest1Quality
+{
+	set: 10
+}
+Nest2Quality
+{
+	set: 15
+}
+Nest3Quality
+{
+	set: 20
+}
+PrattEbmEquivalent
+{
+	set_boolean: false
+}
